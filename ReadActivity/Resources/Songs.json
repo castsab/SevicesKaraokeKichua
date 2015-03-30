@@ -1,0 +1,80 @@
+[
+    {
+        "name": "alejandro sanz no es lo mismo",
+        "phrases": [
+            {
+                "phrase": "Eres tanta gente, que dime",
+                "words": [
+                    {
+                        "text": "Eres"
+                    },
+                    {
+                        "text": "tanta"
+                    },
+                    {
+                        "text": "gente"
+                    }
+                ]
+            },
+            {
+                "phrase": "\u00bfcon qui\u00e9n hablo ahora?",
+                "words": [
+                    {
+                        "text": "qui\u00e9n"
+                    },
+                    {
+                        "text": "ahora"
+                    }
+                ]
+            },
+            {
+                "phrase": "\u00bfno ves que no sois iguales?",
+                "words": [
+                    {
+                        "text": "iguales"
+                    }
+                ]
+            },
+            {
+                "phrase": "mas alta y ya no pude alcanzarte",
+                "words": [
+                    {
+                        "text": "alta"
+                    },
+                    {
+                        "text": "alcanzarte"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Ariana Grande - Problem (ft Iggy Azalea)",
+        "phrases": [
+            {
+                "phrase": "Smart money bettin' I'll be better off without you",
+                "words": [
+                    {
+                        "text": "money"
+                    },
+                    {
+                        "text": "without"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Mirada ardilla. !chan chan chaaann!",
+        "phrases": [
+            {
+                "phrase": "!chan chan chaaann!",
+                "words": [
+                    {
+                        "text": "chaaann"
+                    }
+                ]
+            }
+        ]
+    }
+]

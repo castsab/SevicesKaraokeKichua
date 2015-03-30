@@ -1,0 +1,6 @@
+/nbproject
+/vendor
+/testing
+composer.json
+composer.phar
+composer.lock
