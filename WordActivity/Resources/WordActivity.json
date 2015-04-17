@@ -2,16 +2,31 @@
     {
         "name": "alejandro sanz no es lo mismo",
         "showWords": [
-            "Eres",
+            "Eres - heres",
             "tanta",
             "gente",
             "qui\u00e9n",
-            "ahora"
+            "ahora - ajora"
         ],
         "wordsValids": [
-            "Eres",
-            "ahora"
+            "Eres - heres",
+            "ahora - ajora"
         ],
         "level": 1
+    },
+    {
+        "name": "alejandro sanz no es lo mismo",
+        "showWords": [
+            "Eres - heres",
+            "tanta",
+            "gente",
+            "qui\u00e9n",
+            "ahora - ajora"
+        ],
+        "wordsValids": [
+            "Eres - heres",
+            "ahora - ajora"
+        ],
+        "level": 2
     }
 ]
