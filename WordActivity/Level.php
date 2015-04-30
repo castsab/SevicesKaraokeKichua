@@ -22,4 +22,18 @@ class Level {
         }
     }
     
+    public function getArrayAllLevels() {
+        $sheet = $this->reader->getSheetObject();
+        $songsArray = array();
+        
+        for($file=2; $file<=$sheet->getHighestRow(); $file++)
+        {
+            $cellValue = $sheet->getCellByColumnAndRow(0, $file)->getValue();
+            if (!empty($cellValue))
+                $songsArray[] = $cellValue;
+        }
+        
+        return $songsArray;
+    }
+    
 }

@@ -1,14 +1,14 @@
 <?php
 
 require_once 'Reader.php';
-require_once 'Song.php';
+require_once 'Level.php';
 
 class Phrase {
     
     protected $reader;
     private $lastPhraseRow = 1;
     private $lastSongSelection;
-    private $rowSong;
+    private $rowLevel;
     
     public function setReader($reader) {
         $this->reader = $reader;
@@ -16,7 +16,7 @@ class Phrase {
     
     public function setSong($rowSong)
     {
-        $this->rowSong = $rowSong;
+        $this->rowLevel = $rowSong;
     }
     
     public function setLastPhraseRow($lastPhraseRow) {
@@ -27,7 +27,7 @@ class Phrase {
         $sheet = $this->reader->getSheetObject();
         $phrasesArray = array();
         
-        for($file=$this->rowSong; $file<=$sheet->getHighestRow(); $file++)
+        for($file=$this->rowLevel; $file<=$sheet->getHighestRow(); $file++)
         {
             $cellSongNameValue = $sheet->getCellByColumnAndRow(0, $file)->getValue();
             

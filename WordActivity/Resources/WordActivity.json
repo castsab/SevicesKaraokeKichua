@@ -1,32 +1,32 @@
 [
     {
-        "name": "alejandro sanz no es lo mismo",
+        "level": 1,
         "showWords": [
-            "Eres - heres",
+            "Eres",
             "tanta",
             "gente",
             "qui\u00e9n",
-            "ahora - ajora"
+            "ahora"
         ],
         "wordsValids": [
-            "Eres - heres",
-            "ahora - ajora"
+            "Eres",
+            "ahora"
         ],
-        "level": 1
+        "name": "alejandro sanz no es lo mismo"
     },
     {
-        "name": "alejandro sanz no es lo mismo",
+        "level": 2,
         "showWords": [
-            "Eres - heres",
+            "Eres-heres",
             "tanta",
             "gente",
             "qui\u00e9n",
-            "ahora - ajora"
+            "ahora-hahora"
         ],
         "wordsValids": [
-            "Eres - heres",
-            "ahora - ajora"
+            "Eres-heres",
+            "ahora-hahora"
         ],
-        "level": 2
+        "name": "Mirada ardilla. !chan chan chaaann!"
     }
 ]

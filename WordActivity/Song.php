@@ -1,41 +1,25 @@
 <?php
 
+require_once 'Reader.php';
+
 class Song {
     
-    /**
-     * @type Reader 
-     */
     protected $reader;
-    private $lastSongRow = 1;
     
     public function setReader($reader) {
         $this->reader = $reader;
     }
-    
-    public function getRowSong($songName) {
+
+    public function getConsultSongNameByLevel($level) {
         $sheet = $this->reader->getSheetObject();
-       
-        for($rowSong=2;$rowSong<=$sheet->getHighestRow(); $rowSong++)
+        
+        for($row=2;$row<=$sheet->getHighestRow(); $row++)
         {
-            $cellSongNameValue = $sheet->getCellByColumnAndRow(0, $rowSong)->getValue();
+            $cellLevelValue = $sheet->getCellByColumnAndRow(0, $row)->getValue();
             
-            if ($songName == $cellSongNameValue)
-                return $rowSong;
+            if ($level == $cellLevelValue)
+                return $sheet->getCellByColumnAndRow(3, $row)->getValue();
         }
-    }
-    
-    public function getArrayAllSongs() {
-        $sheet = $this->reader->getSheetObject();
-        $songsArray = array();
-        
-        for($file=2; $file<=$sheet->getHighestRow(); $file++)
-        {
-            $cellValue = $sheet->getCellByColumnAndRow(0, $file)->getValue();
-            if (!empty($cellValue))
-                $songsArray[] = $cellValue;
-        }
-        
-        return $songsArray;
     }
     
 }

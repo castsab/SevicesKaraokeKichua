@@ -22,7 +22,7 @@ class Word {
         }
     }
     
-    public function getArrayWordsBySong($songName) {
+    public function getArrayWordsByLevel($songName) {
         $sheet = $this->reader->getSheetObject();
         $wordsArray = array();
         $words = $this->getShowWordsBySong($songName);
@@ -42,7 +42,7 @@ class Word {
         }
     }
     
-    public function getArrayWordsValidsBySong($songName){
+    public function getArrayWordsValidsByLevel($songName){
         $sheet = $this->reader->getSheetObject();
         $wordsArray = array();
         $words = $this->getShowWordsValidsBySong($songName);

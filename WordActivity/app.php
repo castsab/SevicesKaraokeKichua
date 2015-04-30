@@ -1,28 +1,28 @@
 <?php
 require_once 'Reader.php';
-require_once 'Song.php';
-require_once 'Word.php';
 require_once 'Level.php';
-require_once 'SongWordMerge.php';
+require_once 'Word.php';
+require_once 'Song.php';
+require_once 'LevelWordMerge.php';
 
 $fileName = "WordActivity.json";
 $reader = new Reader();
-$song = new Song();
-$word = new Word();
 $level = new Level();
-$songWordMerge = new SongWordMerge();
+$word = new Word();
+$song = new Song();
+$levelWordMerge = new levelWordMerge();
 
-$reader->read("Resources/", "dataKichua.xlsx");
-$songWordMerge->setSong($song);
-$songWordMerge->setWord($word);
-$songWordMerge->setLevel($level);
-$song->setReader($reader);
-$word->setReader($reader);
+$reader->read("Resources/", "Actividad-palabras.xlsx");
+$levelWordMerge->setWord($word);
+$levelWordMerge->setLevel($level);
+$levelWordMerge->setSong($song);
 $level->setReader($reader);
+$word->setReader($reader);
+$song->setReader($reader);
 
 $dataArray = array();
 
-$dataArray = $songWordMerge->getGenerateArrayBySongs();
+$dataArray = $levelWordMerge->getGenerateArrayByLevels();
 
 $file = fopen('Resources/'.$fileName.'', "w") or die("Problemas para generar el archivo Json - ( Resources/".$fileName." )");
 fwrite($file, json_encode($dataArray,JSON_PRETTY_PRINT));
