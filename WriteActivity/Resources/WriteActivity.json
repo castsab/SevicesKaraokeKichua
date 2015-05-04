@@ -4,6 +4,7 @@
         "phrases": [
             {
                 "phrase": "Eres tanta gente, que dime",
+                "phraseTranslated": "Traduccion 1",
                 "words": [
                     {
                         "text": "Eres"
@@ -18,6 +19,7 @@
             },
             {
                 "phrase": "\u00bfcon qui\u00e9n hablo ahora?",
+                "phraseTranslated": "Traduccion 2",
                 "words": [
                     {
                         "text": "qui\u00e9n"
@@ -29,6 +31,7 @@
             },
             {
                 "phrase": "\u00bfno ves que no sois iguales?",
+                "phraseTranslated": "Traduccion 3",
                 "words": [
                     {
                         "text": "iguales"
@@ -37,6 +40,7 @@
             },
             {
                 "phrase": "mas alta y ya no pude alcanzarte",
+                "phraseTranslated": "Traduccion 4",
                 "words": [
                     {
                         "text": "alta"
@@ -53,6 +57,7 @@
         "phrases": [
             {
                 "phrase": "Smart money bettin' I'll be better off without you",
+                "phraseTranslated": "Traduccion 5",
                 "words": [
                     {
                         "text": "money"
@@ -69,6 +74,117 @@
         "phrases": [
             {
                 "phrase": "!chan chan chaaann!",
+                "phraseTranslated": "Traduccion 6",
+                "words": [
+                    {
+                        "text": "chaaann"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level": 4,
+        "phrases": [
+            {
+                "phrase": "Smart money bettin' I'll be better off without you",
+                "phraseTranslated": "Traduccion 5",
+                "words": [
+                    {
+                        "text": "money"
+                    },
+                    {
+                        "text": "without"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level": 5,
+        "phrases": [
+            {
+                "phrase": "!chan chan chaaann!",
+                "phraseTranslated": "Traduccion 6",
+                "words": [
+                    {
+                        "text": "chaaann"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level": 6,
+        "phrases": [
+            {
+                "phrase": "Smart money bettin' I'll be better off without you",
+                "phraseTranslated": "Traduccion 5",
+                "words": [
+                    {
+                        "text": "money"
+                    },
+                    {
+                        "text": "without"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level": 7,
+        "phrases": [
+            {
+                "phrase": "!chan chan chaaann!",
+                "phraseTranslated": "Traduccion 6",
+                "words": [
+                    {
+                        "text": "chaaann"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level": 8,
+        "phrases": [
+            {
+                "phrase": "Smart money bettin' I'll be better off without you",
+                "phraseTranslated": "Traduccion 5",
+                "words": [
+                    {
+                        "text": "money"
+                    },
+                    {
+                        "text": "without"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level": 9,
+        "phrases": [
+            {
+                "phrase": "Smart money bettin' I'll be better off without you",
+                "phraseTranslated": "Traduccion 5",
+                "words": [
+                    {
+                        "text": "money"
+                    },
+                    {
+                        "text": "without"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level": 10,
+        "phrases": [
+            {
+                "phrase": "!chan chan chaaann!",
+                "phraseTranslated": "Traduccion 6",
                 "words": [
                     {
                         "text": "chaaann"

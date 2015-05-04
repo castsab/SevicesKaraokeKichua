@@ -45,4 +45,21 @@ class Phrase {
         return $phrasesArray;
     }
     
+    public function getPhraseTranslatedByPhrase($phrase) {
+        $sheet = $this->reader->getSheetObject();
+        $phrasesArray = array();
+        
+        for($file=2; $file<=$sheet->getHighestRow(); $file++)
+        {
+            $cellPhraseValue = $sheet->getCellByColumnAndRow(1, $file)->getValue();
+            
+            if($cellPhraseValue == $phrase)
+            {
+                $cellValue = $sheet->getCellByColumnAndRow(3, $file)->getValue();
+                return $cellValue;
+            }
+        }
+        
+    }
+    
 }

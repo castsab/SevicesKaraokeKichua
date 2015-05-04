@@ -41,7 +41,9 @@ class LevelPhraseMerge {
             foreach ($phrasesArray as $j => $phrase) {
                 $wordsArray = $this->word->getArrayWordsByPhrase($phrase);
                 $dataArray[$i]['phrases'][$j]['phrase'] = $phrase;
-
+                $phraseTranslated = $this->phrase->getPhraseTranslatedByPhrase($phrase);
+                $dataArray[$i]['phrases'][$j]['phraseTranslated'] = $phraseTranslated;
+                
                 foreach ($wordsArray as $k=>$word) {
                     $dataArray[$i]['phrases'][$j]['words'][$k]['text'] = $word;
                 }

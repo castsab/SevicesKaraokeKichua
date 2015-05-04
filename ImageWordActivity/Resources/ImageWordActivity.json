@@ -30,5 +30,81 @@
         ],
         "wordValid": "todos",
         "wordTranslated": "todoss"
+    },
+    {
+        "level": 4,
+        "showWords": [
+            "Eres",
+            "tanta",
+            "gente",
+            "qui\u00e9n",
+            "ahora"
+        ],
+        "wordValid": "Eres",
+        "wordTranslated": "Eress"
+    },
+    {
+        "level": 5,
+        "showWords": [
+            "Pronto",
+            "habilidad",
+            "casa"
+        ],
+        "wordValid": "Pronto",
+        "wordTranslated": "Prontoss"
+    },
+    {
+        "level": 6,
+        "showWords": [
+            "Cualidad",
+            "todos",
+            "vamos"
+        ],
+        "wordValid": "todos",
+        "wordTranslated": "todoss"
+    },
+    {
+        "level": 7,
+        "showWords": [
+            "Eres",
+            "tanta",
+            "gente",
+            "qui\u00e9n",
+            "ahora"
+        ],
+        "wordValid": "Eres",
+        "wordTranslated": "Eress"
+    },
+    {
+        "level": 8,
+        "showWords": [
+            "Pronto",
+            "habilidad",
+            "casa"
+        ],
+        "wordValid": "Pronto",
+        "wordTranslated": "Prontoss"
+    },
+    {
+        "level": 9,
+        "showWords": [
+            "Cualidad",
+            "todos",
+            "vamos"
+        ],
+        "wordValid": "todos",
+        "wordTranslated": "todoss"
+    },
+    {
+        "level": 10,
+        "showWords": [
+            "Eres",
+            "tanta",
+            "gente",
+            "qui\u00e9n",
+            "ahora"
+        ],
+        "wordValid": "Eres",
+        "wordTranslated": "Eress"
     }
 ]
