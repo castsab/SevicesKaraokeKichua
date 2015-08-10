@@ -10,22 +10,15 @@ class Word {
         $this->reader = $reader;
     }
 
-    public function getWordsByPhrase($phrase) {
+    public function getWordsByPhrase($phrase,$rowPhrase) {
         $sheet = $this->reader->getSheetObject();
-        
-        for($rowPhrase=2;$rowPhrase<=$sheet->getHighestRow(); $rowPhrase++)
-        {
-            $cellPhraseValue = $sheet->getCellByColumnAndRow(1, $rowPhrase)->getValue();
-            
-            if ($phrase == $cellPhraseValue)
-                return $sheet->getCellByColumnAndRow(2, $rowPhrase)->getValue();
-        }
+        return $sheet->getCellByColumnAndRow(2,$rowPhrase)->getValue();
     }
     
-    public function getArrayWordsByPhrase($phrase) {
+    public function getArrayWordsByPhrase($phrase, $rowPhrase) {
         $sheet = $this->reader->getSheetObject();
         $wordsArray = array();
-        $words = $this->getWordsByPhrase($phrase);
+        $words = $this->getWordsByPhrase($phrase,$rowPhrase);
         $wordsArray = explode(",",$words);
         return $wordsArray;
     }

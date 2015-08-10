@@ -33,13 +33,14 @@ class LevelPhraseMerge {
     public function getGenerateArrayBySongs() {
         $levelsArray = $this->level->getArrayAllLevels();
         $dataArray = array();
-
+		$indexRow = 1;
         foreach ($levelsArray as $i => $songName) {
             $phrasesArray = $this->phrase->getArrayPhrasesBySong($songName);
             $dataArray[$i]['level'] = $songName;
-
-            foreach ($phrasesArray as $j => $phrase) {
-                $wordsArray = $this->word->getArrayWordsByPhrase($phrase);
+			
+            foreach ($phrasesArray as $j => $phrase) {			
+				$indexRow ++;
+                $wordsArray = $this->word->getArrayWordsByPhrase($phrase, $indexRow);
                 $dataArray[$i]['phrases'][$j]['phrase'] = $phrase;
                 $phraseTranslated = $this->phrase->getPhraseTranslatedByPhrase($phrase);
                 $dataArray[$i]['phrases'][$j]['phraseTranslated'] = $phraseTranslated;
@@ -47,6 +48,7 @@ class LevelPhraseMerge {
                 foreach ($wordsArray as $k=>$word) {
                     $dataArray[$i]['phrases'][$j]['words'][$k]['text'] = $word;
                 }
+				
             }
         }
         
